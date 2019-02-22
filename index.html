@@ -10,7 +10,7 @@
 
 </body>
 <script type="module" data-cfasync=false>
-  import util from './index.js'
+  const utils = require('./index.js')
   let nowString = util.parseTime(new Date(), '{h}:{m}:{s}')
   let from2028 = util.createTimeString((new Date('2028-12-12').getTime() - new Date()) / 1000, true)
   document.body.append(nowString + '\n')

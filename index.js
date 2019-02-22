@@ -1,10 +1,10 @@
 const parseTime = require('./lib/parseTime.js')
 const wxTool =  require('./lib/wxTool.js')
-module.export = {
+module.exports = {
   parseTime: parseTime.parseTime,
   createTimeString: parseTime.createTimeString,
   wxAlert: wxTool.wxAlert,
-  wxToast: wxToast.wxToast,
+  wxToast: wxTool.wxToast,
   wxCheckNewVersRload: wxTool.wxCheckNewVersRload,
   compareVersion: wxTool.compareVersion
 }
